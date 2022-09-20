@@ -59,7 +59,7 @@ class Cargo {
 
         //ELEMENTE PARA APAGAR A LINHA
             let imgTrash = document.createElement('img');
-            imgTrash.src = '/Page2/img/trash.png';
+            imgTrash.src = '/img/trash.png';
             imgTrash.setAttribute('onclick','cargo.deletar('+this.arrayCargos[i].id +')');
             //<td><img></td>
             td_acoes.appendChild(imgTrash);
