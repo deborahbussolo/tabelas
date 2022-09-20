@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Page2/tabela_cargo_pessoa/style.css">
+    <title>Tabela - Cargo</title>
+</head>
+<body>
+    <header>
+        <div class="navegacao">
+            <button class="antes" onclick="location.href='/Page2/tabela_pessoa/index.html'">⇐ Tabela Pessoa</button>
+            <button class="depois" onclick="location.href='/Page2/tabela_cargo/index.html'">Tabela Extra ⇒</button>
+        </div>
+
+        <div clas="title">
+            <h2>Tabela Cargo</h2>
+            <button onclick="profissao.gerarAll()">Lista de cargos</button>
+            <button onclick="pessoa.gerarAll()">Lista de pessoas</button>
+        </div>
+    </header>
+    <main>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th class="center">n°</th>
+                    <th>Cargo</th>
+                    <th>Salario Padrão</th>
+                </tr>
+            </thead>
+            <tbody id="tbody">
+            </tbody>
+        </table>
+        <table class="table_pessoa">
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>Cargo</th>
+                    <th>Salario Total</th>
+                </tr>
+            </thead>
+            <tbody id="tbody_pessoa">
+            </tbody>
+        </table>
+    </main>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="/Page2/tabela_cargo_pessoa/script.js"></script>
+</body>
+</html>

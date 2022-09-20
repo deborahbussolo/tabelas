@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Georgian&family=Quicksand:wght@320;400;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Quicksand', sans-serif;
+}
+
+body{
+    max-width: 720px;
+    width: 90%;
+    margin: 0 auto;
+    color: #fff;
+    background-color: #0C223D;
+}
+
+h2{
+    margin-bottom: 20px;
+}
+p{
+    line-height: 2rem;
+    margin-bottom: 20px;
+}
+
+.navegacao{
+    display: flex;
+    justify-content: end;
+}
+
+.navegacao button{
+    border: none;
+}
+
+button {
+    margin: 20px auto;
+    width: 170px;
+    height: 40px;
+    font-weight: 600;
+    margin-right: 20px;
+    letter-spacing: 1px;
+    background-color: #0C223D;
+    border: 2px solid #fff;
+    color: #fff;
+	font-family: 'Quicksand', sans-serif;
+}
+button:hover {
+    border: none;
+    color: #fff;
+    background-color: #007bff;
+    transition: .2s;
+}
+
+table{
+    padding-top: 20px;
+    width: 100%;
+}
+
+table th{
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 2px;
+}
+
+table td{
+    background-color:#fff;
+    color: #0C223D;
+}
+
+table th, td{
+    text-align: left;
+    padding: 5px 8px;
+    font-weight: 600;
+}
+
+table td img{
+    border: none;
+    width: 22px;
+}
+
+.center{
+    text-align: center;
+}
+header{
+    animation: fromTop .7s .2s backwards;
+}
+
+main{
+    animation: fromBottom .7s .2s backwards;
+}
+
+td{
+    animation: fromBottom .3s .1s backwards;
+}
+@keyframes fromTop{
+    from{
+        opacity: 0;
+        transform: translateY(-30px)
+    }
+
+    to{
+        opacity: 1;
+        transform: translateY(0)
+    }
+}
+
+@keyframes fromBottom{
+    from{
+        opacity: 0;
+        transform: translateY(30px)
+    }
+
+    to{
+        opacity: 1;
+        transform: translateY(0)
+}
+}

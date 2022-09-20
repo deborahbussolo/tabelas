@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="/Page2/tabela_cargo/js/javascript.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <title>Tabela Extra</title>
+</head>
+<body>
+    <main>
+        <div class="navegacao">
+            <button onclick="location.href='/Page2/tabela_cargo_pessoa/index.html'">⇐ Tabela Cargo</button>
+        </div>
+        <div clas="title">
+            <h2>Tabela Extra</h2>
+            <p>Desenvolvi com o intuito de aprender mais e possivelmente usar ela em alguma etapa, no fim acabei mudando de ideia, mas resolvi colocá-la junto ao processo.</p>
+        </div>
+        <div class="card">
+            <div class="lineInput">
+                <label>Cargo</label>
+                <input type="text" id="cargo" placeholder="ex: Front End">
+            </div>
+            <div class="lineInput">
+                <label>Salario</label>
+                <input size='10' type="text" id="salario" placeholder="ex: 1000">
+            </div>
+            <div class="buttons">
+                <button onclick="cargo.salvar()">Salvar</button>
+                <button onclick="cargo.cancelar()">Cancelar</button>
+            </div>
+
+        </div>
+        <div class="content">
+            <table>
+                <thead class="cargo">
+                    <th class="center">ID</th>
+                    <th>Cargo</th>
+                    <th>Salario Padrão</th>
+                    <th class="center">Deletar</th>
+                </thead>
+                <tbody id="tbody_cargo">
+                </tbody>
+            </table>
+        </div>
+    </main>   
+</body>
+</html>

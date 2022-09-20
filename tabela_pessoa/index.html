@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Page2/tabela_pessoa/style.css">
+    <title>Tabela - Pessoa</title>
+</head>
+<body>
+    <header>
+        <div class="navegacao">
+            <button onclick="location.href='/Page2/tabela_cargo_pessoa/index.html'">Tabela Cargos  ⇒</button>
+        </div>
+
+        <div clas="title">
+            <h2>Tabela Pessoa</h2>
+            <p>Apesar da pesquisa pelo CPF ser mais exata, já estamos acostumados a ver uma lista ordenada por ordem alfabética, sabendo que fazer algo fora do padrão gera estranheza e desconforto, minha escolha foi organizar por ordem alfabética dos nomes.</p>
+            <button onclick="pessoa.gerar1()">Mostrar +1 pessoa</button>
+            <button onclick="pessoa.gerarAll()">Lista completa</button>
+        </div>
+    </header>
+    <main>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th class="center">n°</th>
+                    <th>Nome Completo</th>
+                    <th>CPF</th>
+                    <th class="center">Idade</th>
+                    <th>Telefone</th>
+                </tr>
+            </thead>
+            <tbody id="tbody">
+            </tbody>
+        </table>
+    </main>
+    <script src="/Page2/tabela_pessoa/script.js"></script>
+</body>
+</html>

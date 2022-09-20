@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Georgian&family=Quicksand:wght@320;400;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Quicksand', sans-serif;
+}
+
+::-webkit-scrollbar{
+    width: 10px;
+    height: 10px;
+}
+
+::-webkit-scrollbar-track{
+    background-color: #fff;
+    border-radius: 30px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #007bff;
+    border-radius: 30px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #0C223D; 
+  }
+
+body{
+    max-width: 720px;
+    width: 90%;
+    margin: 0 auto;
+    color: #fff;
+    background-color: #0C223D;
+}
+
+h2{
+    margin-bottom: 20px;
+}
+
+p{
+    line-height: 2rem;
+    margin-bottom: 20px;
+}
+
+.navegacao{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.navegacao button{
+    border: none;
+}
+
+button.antes{
+    margin-left: 0;
+}
+
+button {
+    margin: 20px auto;
+    width: 170px;
+    height: 40px;
+    font-weight: 600;
+    margin-right: 20px;
+    letter-spacing: 1px;
+    background-color: #0C223D;
+    border: 2px solid #fff;
+    color: #fff;
+	font-family: 'Quicksand', sans-serif;
+}
+button:hover {
+    border: none;
+    color: #fff;
+    background-color: #007bff;
+    transition: .2s;
+}
+
+button .antes{
+    padding-right: 100%;
+    margin-right: 50%;
+}
+
+table{
+    padding-top: 20px;
+    width: 100%;
+    
+}
+
+.table_pessoa{
+    padding-bottom: 40px;
+}
+
+tr{
+    background-color: #fff;
+    color: #0C223D;
+}
+
+tr:hover{
+    cursor: pointer;
+    border: none;
+    color: #fff;
+    background-color: #007bff;
+    transition: .2s;
+}
+
+table th{
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 2px;
+}
+
+table th, td{
+    text-align: left;
+    padding: 5px 8px;
+    font-weight: 600;
+}
+
+table td img{
+    border: none;
+    width: 22px;
+}
+
+.center{
+    text-align: center;
+}
+header{
+    animation: fromTop .7s .2s backwards;
+}
+
+.swal-text{
+    line-height: 25px;
+    width: 90%;
+    color: #0C223D;
+    letter-spacing: 1px;
+    font-size: 16px;
+    font-weight: 600;
+    font-family: 'Quicksand', sans-serif;
+
+}
+.swal-button {
+    margin: 20px auto;
+    width: 170px;
+    height: 40px;
+    font-weight: 600;
+    margin-right: 20px;
+    letter-spacing: 1px;
+    background-color: #0C223D;
+    border: 2px solid #fff;
+    color: #fff;
+	font-family: 'Quicksand', sans-serif;
+}
+
+.swal-button:not([disabled]):hover{
+    border: none;
+    color: #fff;
+    background-color: #007bff;
+    transition: .2s;
+}
+
+main{
+    animation: fromBottom .7s .2s backwards;
+}
+
+td{
+    animation: fromBottom .3s .1s backwards;
+}
+@keyframes fromTop{
+    from{
+        opacity: 0;
+        transform: translateY(-30px)
+    }
+
+    to{
+        opacity: 1;
+        transform: translateY(0)
+    }
+}
+
+@keyframes fromBottom{
+    from{
+        opacity: 0;
+        transform: translateY(30px)
+    }
+
+    to{
+        opacity: 1;
+        transform: translateY(0)
+}
+}
